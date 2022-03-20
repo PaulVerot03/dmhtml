@@ -1,0 +1,110 @@
+/*
+
+J'ai pas mal experimenté avec CSS, surtout avec les polices
+les couleurs, le positionement et les fonds.
+
+Ici, le texte du poème est mis en évidence au millieu avec le menu à gauche
+
+*/
+
+
+/*Pour le titre style manuscrit, importée depuis google fonts, ils ont un super outils pour ca*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+
+
+body{ /*fond parchemin*/
+  background-image: url("scroll.jpg");
+    max-width:100%;
+    height:110%;
+    size: 110%;
+}
+
+.boutton{  /*style du titre de menu*/
+  display: block;
+  float: left;
+  font-family:'Lucida Sans',  sans-serif ;
+  font-weight: bold;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {  /*souligne et éclaircit le texte quand la souris passe dessus*/
+  text-decoration: underline rgba(168, 54, 50, 0.3); /*pour avoir la boite autour du texte un peut transparaente*/
+  color: rgb(48, 46, 46);
+  background-color: rgba(168, 54, 50, 0.3);
+  padding: 1px ;
+  border: 0px  rgba(168, 54, 50, 0.3);
+  border-radius: 5px;
+}
+
+.MMgeneral { /*force le menu a gauche*/
+  position:absolute;
+  left: 20px;
+  top: 17%;
+  bottom: 0;
+  width: 350px;
+}
+
+.SubMenu1 {  
+  display: none;
+  
+}
+.SubMenu2{
+  display: none;
+}
+.SubMenu3 {
+  display: none;
+}
+
+
+
+.Menu1:hover .SubMenu1{ /*declanche la visibilité du sous menu*/
+  display: block;
+  position: absolute;
+  left:8.2em;
+  top: 0em; /*pour placer sur la hauteur*/
+  width: 300px;
+  font-family:'Lucida Sans', sans-serif ;
+  font-weight: 500;
+}
+
+.Menu2:hover .SubMenu2{ 
+  display: block;
+  position: absolute;
+  left: 8.2em; /*très précis comme mesure*/
+  top: 3.5em;
+  width: 300px;
+  font-family:'Lucida Sans', sans-serif ;
+  font-weight: 500;
+}
+
+.Menu3:hover .SubMenu3{
+  display: block;
+  position: absolute;
+  left: 8.2em;
+  top: 7em;
+  width: 300px;
+  font-family:'Lucida Sans', sans-serif ;
+  font-weight: 500;
+}
+
+.MMtexte p { /*n'affecte que le texte et pas le titre*/
+  font-family:'Lucida Sans',  sans-serif ;
+  font-size: 22px;
+  position: absolute;
+  left: 40%;
+  top: 13%;
+}
+
+h1 { /*titre*/
+  position: absolute;
+  left: 25%;
+  font-family: 'Cinzel Decorative', cursive;
+  color: rgb(117, 9, 27);
+  font-size: 30px;
+}
