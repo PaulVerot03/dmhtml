@@ -14,7 +14,8 @@ Ici, le texte du poème est mis en évidence au millieu avec le menu à gauche
 
 
 body{ /*fond parchemin*/
-  background-image: url("https://zimbra.free.fr/service/home/~/scroll.jpg?auth=co&loc=fr&id=30436&part=2");
+  background-image: url("https://zimbra.free.fr/service/home/~/scroll.jpg?auth=co&loc=fr&id=30436&part=2"); /*j'ai du utiliser un lien parce que l'image dans le dossier ne fonctionnait pas*/
+    /*ou plutot que je n'arrive pas a la faire fonctioner, ca dépend des points de vue*/
     max-width:100%;
     height:110%;
     size: 110%;
